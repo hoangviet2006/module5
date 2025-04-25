@@ -1,4 +1,4 @@
-const Student = [{
+let studentList = [{
     id:1,
     name:'Hoàng Việt1',
     class: 'C10'
@@ -21,9 +21,13 @@ const Student = [{
 }]
 export function getStudent(){
     // gọi api lấy dữ liệu
-    return Student;
+    return studentList;
 }
 export function addStudent(newStudent){
     // gọi api thêm mới
-    Student.push(newStudent);
+    studentList.push(newStudent);
+}
+export function deleteById(id){
+    // gọi api thêm mới
+ studentList   = studentList.filter((s)=>s.id!=id);
 }

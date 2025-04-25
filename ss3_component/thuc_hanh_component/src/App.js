@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Welcome from './components/Welcome'
-import AddComponentFunction from "./components/AddComponentFunction";
-import AddComponentClass from "./components/AddComponentClass";
-import IncreaseOrDecrease from "./components/IncreaseOrDecrease";
-import BackgroundColor from "./components/BackgroundColor";
-import DeleteComponent from "./components/DeleteComponent";
-import ListStudentComponent  from "./components/student/ListStudentComponent";
+import Welcome from './components/thuc_hanh/Welcome'
+import AddComponentFunction from "./components/thuc_hanh/AddComponentFunction";
+import AddComponentClass from "./components/thuc_hanh/AddComponentClass";
+import IncreaseOrDecrease from "./components/thuc_hanh/IncreaseOrDecrease";
+import BackgroundColor from "./components/thuc_hanh/BackgroundColor";
+import DeleteComponent from "./components/thuc_hanh/DeleteComponent";
+import ListStudentComponent  from "./components/bai_tap/student/ListStudentComponent";
+import TodoApp from "./components/bai_tap/todoApp/todoApp";
+import FormLogin from "./components/bai_tap/login/FormLogin";
 function App() {
     return (
         <div className="App">
@@ -16,8 +18,9 @@ function App() {
             {/*<IncreaseOrDecrease/>*/}
             {/*<BackgroundColor/>*/}
             {/*<DeleteComponent/>*/}
-
             <ListStudentComponent/>
+            <TodoApp/>
+            <FormLogin/>
         </div>
     );
 }

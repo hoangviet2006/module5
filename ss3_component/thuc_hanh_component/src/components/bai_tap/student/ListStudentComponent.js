@@ -1,6 +1,7 @@
 import React, {Component} from "react";
-import {getStudent} from "../../service/StudentService";
+import {getStudent} from "../../../service/StudentService";
 import AddStudentComponent from "./AddStudentComponent";
+import ModalDelete from "./ModalDelete";
 
 class ListStudentComponent extends Component {
     constructor(props) {
@@ -8,14 +9,22 @@ class ListStudentComponent extends Component {
         this.state = {
             studentList: [],
             showModal: false,
-            addSusses: false
+            addSusses: false,
+            deleteId: 0,
         }
+    }
+    closeModal(){
+        this.setState((preV)=>({
+            ...preV,
+            studentList: [...getStudent()],
+            showModal:!preV.showModal
+        }))
     }
 
 
     componentDidMount() {
         console.log("didMount-------")
-        /// gọi dữ liệu
+        // gọi dữ liệu
         this.setState((preS) => ({
             ...preS,
             studentList: [...getStudent()]
@@ -37,6 +46,14 @@ class ListStudentComponent extends Component {
         this.setState((preV) => ({
             ...preV,
             addSusses: true
+        }))
+    }
+    handleShowModal(id){
+        console.log(id)
+        this.setState((preV)=>({
+            ...preV,
+            deleteId : id,
+            showModal:!preV.showModal,
         }))
     }
 
@@ -61,12 +78,14 @@ class ListStudentComponent extends Component {
                             <td>{s.name}</td>
                             <td>{s.class}</td>
                             <td>
-                                <button>Xoá</button>
+                                <button onClick={() => this.handleShowModal(s.id)}>
+                                    Xoá</button>
                             </td>
                         </tr>
                     )}
                     </tbody>
                 </table>
+                <ModalDelete closeModal={this.closeModal.bind(this)} deleteId ={this.state.deleteId}  showModal = {this.state.showModal}/>
             </>
         )
     }
