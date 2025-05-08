@@ -1,0 +1,78 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "nameProduct": "Máy Quạt1",
+      "typeProduct": {
+        "id": 2,
+        "type": "ProMax"
+      }
+    },
+    {
+      "id": 2,
+      "nameProduct": "Máy Quạt",
+      "typeProduct": {
+        "id": 2,
+        "type": "ProMax"
+      }
+    },
+    {
+      "id": 3,
+      "nameProduct": "Máy Quạt",
+      "typeProduct": {
+        "id": 3,
+        "type": "VipPro"
+      }
+    },
+    {
+      "id": 4,
+      "nameProduct": "Áo Thun1",
+      "typeProduct": {
+        "id": 2,
+        "type": "ProMax"
+      }
+    },
+    {
+      "id": 5,
+      "nameProduct": "Máy Quạt",
+      "typeProduct": {
+        "id": 1,
+        "type": "Pro"
+      }
+    },
+    {
+      "id": 6,
+      "nameProduct": "Áo Thun",
+      "typeProduct": {
+        "id": 2,
+        "type": "ProMax"
+      }
+    }
+  ],
+  "typeProduct": [
+    {
+      "id": 1,
+      "type": "Pro"
+    },
+    {
+      "id": 2,
+      "type": "ProMax"
+    },
+    {
+      "id": 3,
+      "type": "VipPro"
+    }
+  ],
+  "account": [
+    {
+      "username": "admin",
+      "password": "111111",
+      "role": "admin"
+    },
+    {
+      "username": "hoangviet",
+      "password": "3003",
+      "role": "customer"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "orderProduct": [
+    {
+      "id": 1,
+      "dateOrder": "2025-05-08",
+      "quality": 2,
+      "totalPrice": 2000,
+      "product": {
+        "id": 1,
+        "nameProduct": "Áo Polo",
+        "price": 1000
+      }
+    },
+    {
+      "id": 2,
+      "dateOrder": "2025-05-15",
+      "quality": 2,
+      "totalPrice": 2000,
+      "product": {
+        "id": 1,
+        "nameProduct": "Áo Polo",
+        "price": 1000
+      }
+    },
+    {
+      "id": 3,
+      "dateOrder": "2025-05-08",
+      "quality": 1,
+      "totalPrice": 1000,
+      "product": {
+        "id": 1,
+        "nameProduct": "Áo Polo",
+        "price": 1000
+      }
+    },
+    {
+      "id": 4,
+      "dateOrder": "2025-05-08",
+      "quality": 7,
+      "totalPrice": 14000,
+      "product": {
+        "id": 2,
+        "nameProduct": "Quần Âu",
+        "price": 2000
+      }
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "nameProduct": "Áo Polo",
+      "price": 1000
+    },
+    {
+      "id": 2,
+      "nameProduct": "Quần Âu",
+      "price": 2000
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "spotify": [
+    {
+      "id": 1,
+      "songName": "Khó Vẽ Nụ Cười",
+      "singerName": "ĐạtG",
+      "musician": "Hoàng Việt",
+      "playtime": "3:00",
+      "likes": 10,
+      "statusMusic": "Công Khai"
+    },
+    {
+      "id": 2,
+      "songName": "Nơi Này Có anh",
+      "singerName": "Sơn Tùng",
+      "musician": "Hoàng Việt",
+      "playtime": "3:00",
+      "likes": 51,
+      "statusMusic": "Lưu Trữ"
+    },
+    {
+      "id": 3,
+      "songName": "Lạc Trôi",
+      "singerName": "Sơn Tùng",
+      "musician": "Hoàng Việt1",
+      "playtime": "3:00",
+      "likes": 72,
+      "statusMusic": "Lưu Trữ"
+    },
+    {
+      "id": 4,
+      "songName": "Hãy Trao Cho Anh",
+      "singerName": "Sơn Tùng",
+      "musician": "Hoàng Việt1",
+      "playtime": "3:00",
+      "likes": 0,
+      "statusMusic": "Lưu Trữ"
+    },
+    {
+      "id": 5,
+      "songName": "Lời Xin Lỗi Vụng về",
+      "singerName": "Quân A.P",
+      "musician": "Hoàng Việt1",
+      "playtime": "3:22",
+      "likes": 6,
+      "statusMusic": "Lưu Trữ"
+    },
+    {
+      "id": 6,
+      "songName": "Sóng Gió",
+      "singerName": "Jack 5 Triệu",
+      "musician": "Xuân Đạt",
+      "playtime": "3:22",
+      "likes": 0,
+      "statusMusic": "Lưu Trữ"
+    },
+    {
+      "id": 7,
+      "songName": "Bạc Phận",
+      "singerName": "Jack 5 Triệu",
+      "musician": "Trần Văn Chung",
+      "playtime": "3:00",
+      "likes": 0,
+      "statusMusic": "Lưu Trữ"
+    }
+  ]
+}

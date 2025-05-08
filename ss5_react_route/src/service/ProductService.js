@@ -1,44 +1,57 @@
-let productService = [
-    {
-        id:1,
-        codeProduct: 'XX1',
-        nameProduct: 'Máy Giặt',
-        quantity: 10,
-        price: 15000000
-    },
-    {
-        id:2,
-        codeProduct: 'XX2',
-        nameProduct: 'Tủ Lạnh',
-        quantity: 15,
-        price: 25000000
-    },
-    {
-        id:3,
-        codeProduct: 'XX3',
-        nameProduct: 'TiVi',
-        quantity: 15,
-        price: 10000000
-    },
-    {
-        id:4,
-        codeProduct: 'XX4',
-        nameProduct: 'Điều Hoà',
-        quantity: 15,
-        price: 15000000
-    },
-    {
-        id:5,
-        codeProduct: 'XX5',
-        nameProduct: 'Máy Quạt',
-        quantity: 15,
-        price: 20000000
+import axios from "axios";
+export async function getAllProduct(page,size) {
+    try {
+        const response = await axios.get(`https://back-end-c11.onrender.com/products?_page=${page}&_limit=${size}`);
+        const data= response.data
+        const totalRecord=response.headers['x-total-count'];
+        return {data,totalRecord}
+    } catch (e) {
+        console.log('lỗi ' + e)
     }
-
-]
-export function getAllProduct(){
-    return productService;
 }
-export function createProduct(newProduct){
-    return productService.push(newProduct);
+
+export async function createProduct(newProduct) {
+    try {
+        const response = await axios.post('https://back-end-c11.onrender.com/products', newProduct)
+        console.log(response.data)
+    } catch (e) {
+        console.log('lỗi ' + e)
+    }
+}
+
+export async function deleteProductById(id) {
+    try {
+        const response =await axios.delete('https://back-end-c11.onrender.com/products/'+id)
+    }catch (e) {
+        console.log('lỗi ' + e)
+    }
+}
+
+export async function searchByName(name) {
+    try {
+        const response = await axios.get('https://back-end-c11.onrender.com/products?nameProduct_like='+name)
+        console.log(response.data)
+        return response.data
+
+    }catch (e) {
+        console.log('lỗi ' + e)
+    }
+}
+
+export async function findById(id) {
+    try {
+        const response = await axios.get('https://back-end-c11.onrender.com/products/' + id);
+        return response.data
+    } catch (e) {
+        console.log('lỗi ' + e)
+    }
+}
+
+export async function updateById(id, product) {
+    try {
+        const response =await axios.put('https://back-end-c11.onrender.com/products/' + id, product)
+        return response.data
+    } catch (e) {
+        console.log('lỗi ' + e)
+    }
 }
